@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HW2</title>
+    <style>
+    .div_class {    
+        /* чтобы эл-ты располагались в одной строке */
+        float: left; 
+
+        /* для резиновости */
+        width: 50%;
+    }
+    .gray{
+        background-color: grey;
+    }
+    .darkgray{
+        background-color: darkgray;
+    }
+    img {
+        /* для резиновости */
+        width: 100%;
+        height: 30%;
+    }
+    input{
+        border-radius: 30px;
+    }
+    .my_button{
+        background-color: rgb(176, 30, 30);
+        color: white;
+        border-radius: 30px;
+        border: none;
+        margin-bottom: 20px;
+        margin-top: 10px;
+        padding: 10px;
+        opacity: 0.6;
+    }
+    </style>
+</head>
+
+<body>
+
+    <div>
+        <img src="images/Screenshot_1.png" alt="">
+        
+        <div class="div_class darkgray">
+            <h2>Разделы библиотеки</h2>
+            <ol>
+                <li>Фантастика
+                    <ul style="list-style-type: circle">
+                        <li>Научная</li>
+                        <li>Фэнтези</li>
+                    </ul>
+                </li>
+                <li>Детская книга
+                    <ul style="list-style-type: circle">
+                        <li>Для дошкольников</li>
+                        <li>Для дошкольников младших класов</li>
+                    </ul>
+                </li>
+            </ol>
+        </div>
+
+        <div class="div_class gray">
+            <h2>Авторы</h2>
+            <ol>
+                <li>Зарубежные
+                    <ul style="list-style-type: circle">
+                        <li>Роберт Шэкли</li>
+                        <li>Эндрю Нортон</li>
+                    </ul>
+                </li>
+                <li>Отечественные
+                    <ul style="list-style-type: circle">
+                        <li>Александр Пушкин</li>
+                        <li>Николай Гогоь</li>
+                    </ul>
+                </li>
+            </ol>
+        </div>
+    
+        <div style="background-color: rgb(236, 133, 59); height: 30%;">
+            <h2 align="center">Зарегистрироваться в библиотеке:</h2>
+            
+            <table>
+                <tr>
+                    <td>
+                        <label for="name">Имя и фамилия читателя</label>
+                    </td>
+        
+                    <td>
+                        <input style="width: 300px;" type="text" name="name" id="name" placeholder="Укажите свои имя и фамилию">
+                    </td>
+                </tr>
+    
+                <tr>
+                    <td>
+                        <label for="date_bd">Дата рождения</label>
+                    </td>
+        
+                    <td>
+                        <input type="date" name="date_bd" id="date_bd" min="2000-01-01">
+                    </td>
+                </tr>
+    
+                <tr>
+                    <td style="vertical-align: text-top;">
+                        <label>Тип читательского билета</label>
+                    </td>
+        
+                    <td>
+                        <label for="year">Годовой</label>
+                        <input type="radio" name="type_ticket" id="year" value="year"><br>
+                        <label for="const">Постоянный</label>
+                        <input type="radio" name="type_ticket" id="const" value="const"><br>
+                        <label for="one">Разовый</label>
+                        <input type="radio" name="type_ticket" id="one" value="one">
+                    </td>
+                </tr>
+         
+                <tr>
+                    <td>
+                        <label for="mail">Ваш E-mail:</label>
+                    </td>
+        
+                    <td>
+                        <input style="width: 300px;" type="email" name="email" id="email">
+                    </td>
+                </tr>
+    
+                <tr>
+                    <td>
+                        <label for="adress">Ваш адрес:</label>
+                    </td>
+        
+                    <td>
+                        <input style="width: 300px;" type="text" name="adress" id="adress" placeholder="Укажите домашний адрес">
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td>
+                        <label for="city">City:</label>
+                    </td>
+        
+                    <td> 
+                        <select style="width: 150px; border-radius: 30px;" name="city" id="city">
+                              <option value="1" selected="selected">City_1</option>
+                              <option value="2">City_2</option>
+                              <option value="3">City_3</option>
+                              <option value="4">City_4</option>
+                        </select>  
+                    </td>
+                </tr> 
+            </table>
+        
+            <div align="center">
+                <button class="my_button">Зарегистрироваться</button> 
+            </div>
+        
+        </div>
+    </div>
+
+</body>
+</html>

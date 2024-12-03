@@ -1,0 +1,12 @@
+body {
+    background-image: url(images/AEWJ8119.JPG);
+
+    /* повторять только по оси Y */
+    /* background-repeat: repeat-y; */
+    background-repeat: no-repeat;
+    background-position: 50% 50px;
+
+    /* чтобы фон не двигался вместе со скролом */
+    background-attachment: fixed;
+    background-color: aquamarine;
+}

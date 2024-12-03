@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scale</title>
+
+    <style>
+        div{
+            background-color: #ccc;
+            width: 120px;
+            height: 120px;
+            margin:5px;
+            padding: 40px 10px;
+
+            /* если не сделать 'box-sizing: border-box' - то 'padding' добавить высоту и ширину 'div' */
+            box-sizing: border-box;
+
+            border: 1px solid #333; 
+            display: inline-block; 
+        }
+        .halfScale{
+            /* если значение меньше 1 - фигура становится меньше */
+            /* если значения 2 - то первое - это ширина, второе - это высота */
+            transform: scale(0.8, 1.2);
+        }
+        .doubleScale{
+            /* если значение больше 1 - фигура становится больше */
+            transform: scale(2);
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div></div>
+    <div class="doubleScale">scale(2)</div>
+    <div></div>
+    <div class="halfScale">scale(0.8)</div>
+
+</body>
+</html>

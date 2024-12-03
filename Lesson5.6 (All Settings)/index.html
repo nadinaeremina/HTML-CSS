@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All settings</title>
+
+    <style>
+        div{
+            background-color: #ccc;
+            width: 120px;
+            height: 120px;
+            margin:5px;
+            padding: 40px 10px;
+
+            /* если не сделать 'box-sizing: border-box' - то 'padding' добавить высоту и ширину 'div' */
+            box-sizing: border-box;
+
+            border: 1px solid #333; 
+            display: inline-block; 
+        }
+        .transform{
+            /* и сдвигаем и поворачиваем и масштабируем */
+            transform: translate(50px, 100px) skew(30deg, 10deg) scale(1.5) rotate(90deg);
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div></div>
+    <div class="transform"></div>
+    <div></div>
+
+</body>
+
+</html>

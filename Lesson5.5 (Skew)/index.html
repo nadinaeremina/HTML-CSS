@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skew</title>
+
+    <style>
+        div{
+            background-color: #ccc;
+            width: 120px;
+            height: 120px;
+            margin:5px;
+            padding: 40px 10px;
+
+            /* если не сделать 'box-sizing: border-box' - то 'padding' добавить высоту и ширину 'div' */
+            box-sizing: border-box;
+
+            border: 1px solid #333; 
+            display: inline-block; 
+        }
+        .skewed{
+            /* наклон по оси X и по оси Y в градусах относительно верхнего левого угла в текущем положении */
+            transform: skew(30deg, 10deg);
+
+            /* transform: skew(45deg, 0);
+            transform: skew(0,45deg);   */
+
+            /* наклон только по оси X или только по оси Y */
+            /* transform: skewX(45deg);           
+            transform: skewY(-30deg); */
+
+            background-color:red;
+        }
+    </style>
+
+</head>
+<body>
+    
+    <div></div>
+    <div class="skewed"></div>
+    <div></div>
+
+</body>
+</html>

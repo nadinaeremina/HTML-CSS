@@ -1,0 +1,27 @@
+.tr1{
+    text-align: center;
+
+    /* жирный текст */
+    font-weight: bold;
+}
+
+.table1{
+    /* слитые ячейки */
+    border-collapse: collapse;
+
+    width: 800px; 
+}
+
+#id_image{
+    width: 100px;
+}
+
+.b1{
+    /* кнопки по центру */
+    text-align: center;
+}
+
+button, input{
+    width: 150px;
+    margin: 10px;
+}

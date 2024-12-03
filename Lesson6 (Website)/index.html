@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website</title>
+
+    <!-- выходим на уровень выше - покажет папки - там выбираем файл -->
+    <link rel="stylesheet" href="./CSS/main.css">
+</head>
+
+<body>
+
+    <div id="menu_top">
+        <!-- здесь ссылка сама на себя -->
+        <!-- ссылка - а внутри нее 'div', наводим на любую точку внутри 'div' и переходим по ссылке -->
+        <a href="index.html">
+            <div class="menu_top_item" style="background-color: blue;">HOME</div>
+        </a>
+        <div class="menu_top_item">
+            <!-- здесь ссылка на другой файл 'html', находящийся в папке 'about' -->
+            <a href="./About/About.html">ABOUT</a>
+        </div>
+        <div class="menu_top_item">
+            <!-- здесь ссылка на другой файл 'html', находящийся в текущей директории -->
+             <!-- target="_blank" - чтобы страница открывалась на отдельной вкладке -->
+            <a href="Contacts.html" target="_blank">CONTACTS</a>
+        </div>
+        <div class="menu_top_item">
+            <!-- здесь любая ссылка, на которой нах-ся нужная нам информация -->
+            <a href="https://google.com">PARTNERS</a>
+        </div>
+    </div>
+
+    <div id="container_main">
+          <li>list item</li>
+          <li>list item</li>
+          <li>list item</li>
+          <li>list item</li>
+          <li>list item</li>
+          <li>list item</li>
+          <li>list item</li>
+          <li>list item</li>
+          <li>list item</li>
+          <li>list item</li>
+          <li>list item</li>
+          <li>list item</li>
+          <li>list item</li>
+          <li>list item</li>
+          <li>list item</li>
+          <li>list item</li>
+          <li>list item</li>
+          <li>list item</li>
+          <li>list item</li>
+          <li>list item</li>
+          <li>list item</li>
+          <li>list item</li>
+          <li>list item</li>
+          <li>list item</li>
+    </div>
+
+    <br>
+    <br>
+
+    <div>
+        <!-- чтобы нас перекинуло на начало 'div' с этим 'id' -->
+        <a href="#menu_top">Back to top</a>
+    </div>
+
+    <br>
+    <br>
+
+    <div id="footer">
+        <!-- 'mailto:' - спец. метка, а дальше адрес, куда будут приходить сообщения -->
+        Email: <a href="mailto:nadinaeremina@mail.ru">nadinaeremina@mail.ru</a><br>
+        Tel: <a href="tel: +7(953)-000-66-44">+7(953)-000-66-44</a><br>
+        Ftp: <a href="ftp://ftp.loc.gov/pub/ftp.txt">ftp.txt</a><br>
+    </div>
+
+    <div>
+        <a href="https://google.com" target="_blank">
+            <img  id="ref_image" src="images/Screenshot_1.png" alt="">
+        </a>
+    </div>
+
+    <br>
+    <br>
+    <br>
+
+    <div>
+        <!-- 'iframe' - помещение об-та страницы другого сайта у себя на странице -->
+        <iframe id="weather" src="https:pogoda.ru//" frameborder="0">Weather</iframe>
+    </div>
+
+</body>
+</html>

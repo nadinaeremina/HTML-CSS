@@ -1,0 +1,81 @@
+.my_but{
+    width: 205px;
+    height: 50px;
+  }
+ 
+.header__logo {
+    height: 30px;
+    margin-right: 150px;
+    margin-left: 5px;
+  }
+
+.header__controls{
+    width: 180px;
+    display: flex;
+    justify-content: space-around;
+  }
+
+/* шапка */
+header {
+    margin-top: 10px;
+  }  
+
+.reviews {
+    margin-left: 312px;
+    margin-right: 275px;
+    margin-top: 50px;
+    padding-left: 5px;
+  }
+
+.reviews__info{
+    display: flex;
+    justify-content: space-between;
+}
+
+.reviews__info_left_score {
+    color: #ff7039;
+}
+
+.reviews__text {
+    border: 1px solid;
+    padding: 5px;
+}
+
+.reviews__text p{
+    width: 100%;
+}
+
+body {
+    background: url('../img/back.png');
+    background-size: cover;   
+}
+
+.body__about{
+    text-align: center;
+    font-size: large;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+@media (max-width: 1334px) {
+  
+  .header__logo {
+    height: 20px;
+    margin-right: 50px;
+    margin-left: 5px;
+  }
+
+  .my_but{
+      width: 110px;
+      height: 40px;
+  }
+}
+
+@media (max-width: 929px) {
+  .reviews {
+    margin-left: 212px;
+    margin-right: 175px;
+  }
+}
+
+

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyframes</title>
+
+    <style> 
+        div {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            margin: 10px;
+        }
+
+        @keyframes example1 {
+        0%   {background-color: red;}
+        25%  {background-color: yellow;}
+        50%  {background-color: blue;}
+        100% {background-color: green;}
+        }
+
+        @keyframes example2 {
+        0%   {background-color:red; left:0px; top:0px;}
+        25%  {background-color:yellow; left:200px; top:0px;}
+        50%  {background-color:blue; left:200px; top:200px;}
+        75%  {background-color:green; left:0px; top:200px;}
+        100% {background-color:red; left:0px; top:0px;}
+        }
+
+        .div1:hover{
+            /* анимация будет происходить после наведения мышью */
+            animation-name: example1;
+            animation-duration: 4s;
+
+            /* будет 3 повторения в течение 4 секунд */
+            animation-iteration-count: 3;
+            /* 'infinite' - постоянно (пока держим курсор)
+            'animation-fill-mode:forwards' - остановиться на последнем кадре */
+        }
+        .div2{
+            position: relative;
+            animation-name: example2;
+            animation-duration: 4s;
+
+            /* задержка перед анимацией */
+            animation-delay: 2s;
+        }
+        .div3{
+            position: relative;
+   
+            animation-name: example2;
+            animation-duration: 5s;
+            animation-timing-function: linear;
+            animation-delay: 2s;
+
+            /* бесконечно */
+            animation-iteration-count: infinite;
+
+            /* возвращение по обратной траектории */
+            animation-direction: alternate; 
+
+            /* сокращенный способ записи */
+            animation: example2 5s linear 2s infinite alternate;
+        }
+    </style>
+    
+</head>
+<body>
+    
+    <div class="div1"></div>
+    <div class="div2"></div>
+    <div class="div3"></div>
+
+</body>
+</html>

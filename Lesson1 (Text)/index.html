@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+        <html lang="en">
+        
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>HTML Intro</title>
+            <link rel="stylesheet" href="style.css">
+        </head> 
+
+<style>
+    p {
+        color: rgb(255, 127, 127); 
+        background-color: bisque;
+        font-size: 16;
+    }
+
+    .p1 {
+        color: blue; 
+        background-color: bisque;
+        font-size: 70;
+    }
+
+    #id6{
+        color: rgb(15, 12, 12); 
+        background-color: rgb(216, 127, 17);
+        font-size: 16;
+    }
+</style>
+
+        <body>
+
+            <h1 id="id6">Заголовок первый</h1>
+            <h2>Заголовок второй</h2>
+            <h3 class="p1">Заголовок третий</h3>
+            <h6 id="id6">Заголовок шестой</h6>
+
+            <p>Мама мыла раму</p>
+
+            <p>Lorem ipsum dolor sit amet <strong>consectetur </strong> adipisicing elit. <br>
+                 <sup>Ea illum quam iusto</sup>consequatur voluptate voluptatum <sub>minima nam</sub> veniam corporis quaerat 
+                iste placeat commodi <s>voluptatibus ipsa</s> illo architecto mollitia dolorum doloribus, 
+
+                <!-- этот тег добавляет горизонтальную разделяющую черту, шириной во весь экран, делит один тег на 2 разных тега
+                стили первого тега ко второму тегу уже применяться не будут -->
+                <hr>
+                dignissimos <b>eligendi</b> libero explicabo deleniti <i>ratione?</i> Perspiciatis veritatis tempora cum,
+                perferendis delectus odio libero <b><i>distinctio debitis</i></b> eveniet officia earum quibusdam, 
+                maiores quam <em>fuga necessitatibus</em> accusamus, facere sint fugiat accusantium voluptatum nulla?
+                Saepe impedit earum voluptatem perferendis soluta, aperiam veritatis quisquam, 
+                reprehenderit iusto tempore vitae a <u>exercitationem</u> minus ex sit magnam?
+            </p>
+
+            <P class="p1">Lorem <STRONG>ipsum dolor sit amet, consectetur adipisicing elit</STRONG>. 
+                Temporibus <I>autem</I>  ea <B>placeat sint sunt   </B>  a, quasi minima cupiditate
+                incidunt <U>veniam reprehenderit</U> aspernatur, optio laboriosam, ducimus hic commodi atque
+                illo vitae distinctio <S>voluptate consequatur. </S>Sed repellendus culpa excepturi tenetur
+                nam ipsa.
+            </P>
+         
+               <!-- 1 способ привязки стиля - прямо в теге - будет принадлежать только данному тегу -->
+               <div>
+                  <p style="color: rgb(12, 145, 216); background-color: bisque; font-size: 16px;">
+                     H<sub>2</sub>O <br>
+                     m<sup>2</sup>
+                  </p>
+               </div>
+
+               <pre>
+                hdhdftrh htfhgtfgf 
+                   rtgrgrfsg            rstgrdsf   rtgredt
+                dgdfg   
+               </pre>
+
+                <div>
+                    
+                </div>
+
+               <h1 align="center">Список</h1>
+               
+               <h2 align="left">Нумерованные списки</h2>
+
+               <ol style="list-style-type: upper-latin;" start="5">
+                <li>text 1</li>
+                <li>text 2</li>
+                <li>text 3</li>
+                <li>text 4</li>
+               </ol>
+
+               <h2 align="left">Маркированный список</h2>
+               
+               <ul style="list-style-type: square" >
+                <li>text 1</li>
+                <li>text 2</li>
+                <li>text 3</li>
+                <li>text 4</li>
+               </ul>
+
+        </body>
+
+</html>
+ <!--
+    высший приоритет: 
+    <p style="color: aquamarine; background-color: bisque; font-size: 16;">
+
+    средний:
+     <style>
+    p {
+        color: aquamarine; 
+        background-color: bisque;
+         font-size: 16;
+    }  
+ 
+    низший: 
+    в отдельном файле
+    -->

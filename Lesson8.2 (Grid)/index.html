@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+        .grid{
+            display: grid;
+        }
+        .grid_item{
+            border: 1px solid black;
+            text-align: center;
+        }
+        .grid-b{
+            grid-template-columns: [left] 33% [middle] 33% [right] auto;
+            grid-template-rows: [r1] 100px [r2] 100px [r3] 100px;
+        }
+        .grid-b-header{
+            grid-column-start: left;
+            grid-column-end: span 3;
+            grid-row-start: r1;
+            grid-row-end: r1;
+        }
+        .grid-b-sidebar{
+            grid-column-start: left;
+            grid-column-end: left;
+            grid-row-start: r2;
+            grid-row-end: span 2;
+        }
+        .grid-b-content{
+            grid-column-start: middle;
+            grid-column-end: middle;
+            grid-row-start: r2;
+            grid-row-end: r2;
+        }
+        .grid-b-advance{
+            grid-column-start: right;
+            grid-column-end: right;
+            grid-row-start: r2;
+            grid-row-end: r2;
+        }
+        .grid-b-footer{
+            grid-column: middle / span 2;
+            grid-row: r3 / r3;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid grid-b">
+        <div class="grid_item grid-b-header">Header</div>
+        <div class="grid_item grid-b-sidebar">Sidebar</div>
+        <div class="grid_item grid-b-content">Content</div>
+
+        <div class="grid_item grid-b-advance">Advance</div>
+        <div class="grid_item grid-b-footer">Footer</div>
+    </div>
+</body>
+</html>

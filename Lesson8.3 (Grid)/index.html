@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+        .grid{
+            display: grid;
+        }
+        .grid_item{
+            border: 1px solid black;
+            text-align: center;
+        }
+        .grid-c-header{
+            grid-area: header;
+        }
+        .grid-c-sidebar{
+            grid-area: sidebar;
+        }
+        .grid-c-main{
+            grid-area: main;
+        }
+        .grid-c-advance{
+            grid-area: advance;
+        }
+        .grid-c-footer{
+            grid-area: footer;
+        }
+        .grid-c{ 
+            /* justify-items: center; */
+            column-gap: 5px;
+            row-gap: 5px;
+            grid-template-areas:  
+                        "header header header"         
+                        "sidebar main advance"
+                        "sidebar footer footer";
+        }
+        .grid-c-2{ 
+            grid-template-areas:  
+                        "header header header header"
+                        /* если хотим еще одну пустую колонку добавить */
+                        "sidebar main advance ."
+                        "sidebar footer footer footer";
+        }
+    </style>
+</head>
+<body>
+    <div class="grid grid-c-2">
+        <div class="grid_item grid-c-header">Header</div>
+        <div class="grid_item grid-c-sidebar">Sidebar</div>
+        <div class="grid_item grid-c-footer">Footer</div>
+
+        <div class="grid_item grid-c-advance">Advanced</div>
+        <div class="grid_item grid-c-main">Main</div>
+    </div>
+</body>
+</html>

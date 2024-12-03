@@ -1,0 +1,11 @@
+.p1 {
+    color: blue; 
+    background-color: bisque;
+    font-size: 20;
+}
+
+div {
+    height: 100px;
+    width: 100px;
+    background-color: rgb(179, 179, 209);
+}

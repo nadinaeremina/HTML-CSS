@@ -1,0 +1,102 @@
+.my_but{
+    width: 205px;
+    height: 50px;
+}
+
+.header__logo {
+    height: 30px;
+    margin-right: 150px;
+    margin-left: 5px;
+  }
+
+/* шапка */
+header {
+    margin-top: 10px;
+}  
+
+.body__logo{
+    width: 100px;
+}
+
+.body__image{
+    margin-top: 30px;
+    margin-left: 312px;
+    margin-right: 275px;
+    background-image: url(../img/photovoltaic_system.jpg);
+    height: 300px;
+    background-position: center;
+}
+
+.body__about{
+    text-align: center;
+    font-size: large;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.body__text p:before {
+    content: '';
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #107b1c;
+    margin-right: 10px;
+    /* элемент располагается как строка текста */
+    display: inline-block;
+}
+
+.body__main_text{
+    margin-left: 312px;
+    margin-right: 275px;
+}
+
+body {
+    background: url('../img/back.png');
+    background-size: cover;   
+}
+
+.green_bold{
+    color:  #107b1c; font-weight: bold;
+}
+
+.images{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    grid-row-gap: 20px;
+}
+  
+
+@media (max-width: 1170px) {
+  
+    .header__logo {
+      height: 20px;
+      margin-right: 50px;
+      margin-left: 5px;
+    }
+
+    .my_but{
+        width: 110px;
+        height: 40px;
+    }
+
+    .body__image{
+        margin-left: 212px;
+        margin-right: 175px;
+    }
+}
+
+@media (max-width: 908px) {
+    .body__main_text{
+        margin-left: 152px;
+        margin-right: 205px;
+    }
+
+    .body__image{
+        margin-left: 152px;
+        margin-right: 205px;
+    }
+}
+
+

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adaptive</title>
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+    crossorigin="anonymous">
+    <style>
+        div{
+            border: 1px solid black;
+            padding: 1px;
+        }
+        col{
+            padding: 0px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- следующие обозначения исп-ся в названиях классах, указывают на размер девайса -->
+    <!--
+        xs - extra small devices <576 (width)
+        sm-  small - 576-767
+        md - medium devices 768-991
+        lg - large 992-1199
+        xl - extra large - 1200+
+    -->
+
+
+<div class="container-fluid">
+    <div class="row">
+        <!-- в 'small' наш тег будет занимать 12 колонок, в 'medium' - 6, в 'large' - 4 -->
+        <div class="col col-sm-12 col-md-6 col-lg-4">A</div>
+        <div class="col col-sm-12 col-md-6 col-lg-4">B</div>
+        <div class="col col-sm-12 col-md-6 col-lg-4">C</div>
+    </div>
+
+    <div class="row">
+        <!-- тк один из тегов занимает 10 колонок, то оставшиеся 2 поделят пространство пополам -->
+        <div class="col">C</div>
+        <div class="col">D</div>
+        <div class="col col-10">E</div>
+    </div>
+</div> 
+
+</body>
+</html>

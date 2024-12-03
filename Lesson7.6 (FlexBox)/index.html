@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBox</title>
+    <style>
+        div{
+            border: 1px solid black;
+        }
+        .container{
+            /* все флексы работают в режиме: 'float: left' */
+            display: flex;
+
+            /* по умолчанию: 'no wrap' - не переносить на след строку */
+            flex-wrap: wrap;
+            /* сейчас - можно переносить, если не помещаются в контейнер */
+
+            /* направление - в строке, если 'column' - то в колоночку */
+            flex-direction: row;
+            justify-content: space-around;
+            height: 800px;
+        }
+        .item{
+            text-align: center;
+            height: 200px;
+            width: 200px;
+            background-color: aqua;
+        }
+        .first{
+            order: 1;
+        }
+        .second{
+            order: 2;
+        }
+        .third{
+            order: -3;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- если у класса не указан 'order' - он по умолчанию - 0 -->
+        <div class="item third">Item1</div>
+        <div class="item second">Item2</div>
+        <div class="item">Item3</div>       
+        <div class="item first">Item4</div>
+        <div class="item">Item5</div>
+        <div class="item">Item6</div>
+        <div class="item">Item7</div>
+        <div class="item">Item8</div>
+        <div class="item">Item9</div>
+    </div>
+
+</body>
+</html>

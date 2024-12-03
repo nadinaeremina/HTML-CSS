@@ -1,0 +1,45 @@
+/* Сам базовый файл со стилями может быть пустым */
+
+/* связываем наш главный файл со стилями с второстепенными файлами со стилями одним из способов: */
+@import url('colors.css');
+/* @import 'colors.css'; */
+
+/* сейчас сделаем все настройки в одном css */
+#menu_top{
+   background-color: aqua;
+   font-weight: bold;
+   font-size: medium;
+   height: 50px;
+}
+
+.menu_top_item{
+    text-align: center;
+    vertical-align: middle;  
+
+    /* от родительского эл-та // этот div будет занимать столько % высоты, сколько и главный div  */
+    height: 100%;
+    width: 25%;
+    
+    float: left; 
+}
+
+a{
+    /* чтобы ссылки не подчеркивались */
+    text-decoration: none;
+}
+
+/* чтобы при наведении на ссылку менялся стиль */
+a:hover{
+    text-decoration: underline;
+    opacity: 0.5;
+}
+
+#ref_image{
+    /* 20% - ширина относительно родительского эл-та (div) */
+    width: 20%;
+}
+
+#weather{
+    width: 30%;
+    height: 300px;
+}

@@ -1,0 +1,95 @@
+#myDiv {
+  width: 100px;
+  height: 50px;
+  background-color: purple;
+}
+
+.pretty-lists {
+  color: aqua;
+}
+
+.pretty-lists span {
+  font-weight: bold;
+  background-color: cornflowerblue;
+}
+
+.pretty-lists ul {
+  background-color: burlywood;
+}
+
+.pretty-lists .title {
+  font-size: 24px;
+}
+
+.pretty-lists .title span {
+  background-color: chartreuse;
+}
+
+.nested-lists > li {
+  color: yellow;
+}
+
+.myLink {
+  color: blue;
+  text-decoration: none;
+  font-size: 24px;
+}
+
+.myLink:hover {
+  text-decoration: underline;
+}
+
+.class-b {
+  font-size: 24px;
+  color: brown;
+  background-color: beige;
+}
+
+.short_article, .long_article {
+  background-color: cadetblue;
+  color: chartreuse;
+  bottom: 1px solid black;
+}
+
+.long_article {
+  font-size: 24px;
+}
+
+.short_article {
+  font-size: 15px;
+}
+
+.class-c {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 24px;
+  color: purple;
+  background-color: beige;
+}
+
+.sidebar {
+  width: 75px;
+  font-size: 24px;
+  color: purple;
+  background-color: beige;
+  border: 1px solid black;
+}
+
+.content {
+  width: 300px;
+  font-size: 24px;
+  color: purple;
+  background-color: beige;
+  border: 1px solid black;
+}
+
+div > p {
+  color: green;
+}
+
+div + p {
+  color: red;
+}
+
+div + ul > li {
+  color: blue;
+}

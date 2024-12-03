@@ -1,0 +1,132 @@
+// когда мы будем файл сохранять - плагин будет генерировать то, что мы напишем в нем в реальный файл css 
+// файл css создастся автоматически
+
+// 1 обычный css
+#myDiv{
+    width: 100px;
+    height: 50px;
+    background-color: purple;
+}
+
+// 2 базовый scss
+.pretty-lists{
+    color: aqua;
+    // для всех 'span', которые вложены в этот класс
+    span{
+        font-weight: bold;
+        background-color: cornflowerblue;
+    }
+    ul{
+        background-color: burlywood;
+    }
+    .title{
+        font-size: 24px;
+        span{
+            background-color: chartreuse;
+        }
+    }
+}
+
+// 3 вложенность к ближайшему родителю
+.nested-lists{
+    // только для 'li' уровнем ниже (просто 'li' - для всех 'li')
+    >li{
+        color: yellow;
+    }
+}
+
+// 4 Оператор & - ссылка класса на самого себя
+.myLink{
+    color: blue;
+    text-decoration: none;
+    font-size: 24px;
+    &:hover{
+        text-decoration: underline;
+    }
+}
+
+// 5 Переменные в SCSS
+$defaultFontSize: 24px;
+$mainBGColor: beige;
+$mainFontColor: brown;
+
+.class-b{
+    font-size: $defaultFontSize;
+    color: $mainFontColor;
+    background-color: $mainBGColor;
+}
+
+// 6 Многофайловость
+@import "global.scss";
+@import "colors.scss";
+@import "fonts.scss";
+
+// 7 Использование шаблонов
+%article-template{
+    background-color: cadetblue;
+    color: chartreuse;
+    bottom: 1px solid black;
+}
+
+.long_article{
+    // используем шаблон
+    @extend %article-template;
+    font-size: $defaultFontSize;
+}
+
+.short_article{
+    // используем шаблон
+    @extend %article-template;
+    font-size: 15px;
+}
+
+// 8 миксины
+// 8.1 - с параметрами
+
+// название 'функции'
+@mixin createCustomFS($fs, $fc, $fbc)
+{
+    // наш 'fs' будет равен той переменной, которую мы передали
+    font-size: $fs;
+    color: $fc;
+    background-color: $fbc;
+}
+
+.class-c{
+    font-family: Arial, Helvetica, sans-serif;
+    // включаем в наш класс функцию 'createCustomFS', передаем в нее переменные или напрямую значения
+    @include createCustomFS($defaultFontSize, purple, $mainBGColor)
+}
+
+// 9 Математические вычисления (':' исп-ся вместо знака равно)
+$globalWidth: 1200px;
+$sidebarWidth: $globalWidth/4;
+
+.sidebar{
+    width: $sidebarWidth/4;
+    @include createCustomFS($defaultFontSize, purple, $mainBGColor);
+    border: 1px solid black;
+}
+
+.content{
+    width: $sidebarWidth;
+    @include createCustomFS($defaultFontSize, purple, $mainBGColor);
+    border: 1px solid black;
+}
+
+// 10 
+
+// все 'p' непосредственно вложенные в тег 'div'
+div>p{
+    color: green;
+}
+
+// все 'p' после тега 'div'
+div+p{
+    color: red;
+}
+
+div +ul> li{
+    color: blue; 
+}
+

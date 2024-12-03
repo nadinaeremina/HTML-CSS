@@ -1,0 +1,41 @@
+body {
+    /* 100% - по оси X, 0 - по оси Y */
+    background: url(Images/images.jpg) no-repeat 100% 0,
+    /* растягиваем по Y - начиная с 0 0  */
+                url(Images/derevo_tekstura_korichnevyj_1319776_1024x600.jpg)
+                /* будет повторяться по обеим осям */
+                repeat;
+    color: antiquewhite;            
+}
+
+.text {
+    /* чтобы была резиновость */
+    width: 50%;
+    
+    /* автоматические отступы */
+    margin: auto;
+
+    color: aliceblue;
+}
+
+.fon {
+    /* картинку зафиксировали, она покрывает весь экран */
+    background: url(Images/voda_prud_riab_1319763_1366x768.jpg) fixed;
+
+    /* зафиксировать на 100px */
+    padding-top: 100px ;
+
+    /* чтобы при прокрутке стояла на месте */
+    padding-bottom: 100px;
+
+    /* для заголовка, который на картинке */
+    text-align: center;
+
+    /* цвет для текста */
+    color: white;
+
+    font-size: 50px;
+
+    /* текст с тенью  */
+    text-shadow:  1px 10px 10px black;
+}

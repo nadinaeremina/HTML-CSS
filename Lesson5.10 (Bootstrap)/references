@@ -1,0 +1,13 @@
+'Bootstrap' - инструмент автоматизации, фреймворк
+
+https://getbootstrap.com/ - главная страница
+
+https://getbootstrap.com/docs/4.0/getting-started/introduction/ - стартовая, можно менять версию
+
+https://getbootstrap.com/docs/3.4/customize/ - кастомные настройки (выборочные)
+можно снять лишние галочки, настроить нужные цвета и тд - сформируется скрипт 
+нажимаем 'complete and download' и сохраняем свой собственный 'Bootstrap'- подключаем все стили, которые там есть
+можно копировать оттуда классы и присваивать их своим элементам
+
+'Tailwinds' - аналог 'Bootstrap'
+https://tailwindcss.com/
